@@ -5,6 +5,9 @@ myStr = 'HelloThereWorld1'
 # Capitalize
 print(myStr.capitalize())
 
+# Lower
+print(myStr.lower())
+
 # Swap case
 print(myStr.swapcase())
 
