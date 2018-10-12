@@ -59,3 +59,22 @@ print(astr.endswith("Hell"))
 
 #Split
 print(astr.split(" "))
+
+#Finds the first occurance 
+print("The word begins at ::",astr.find("llo"))
+
+haystack = 'asdf'
+
+haystack.find('a') # result: 0
+haystack.find('s') # result: 1
+haystack.find('g') # result: -1
+
+if haystack.find('s') >= 0:
+    print('Needle found.')
+else:
+  print('Needle not found.')
+  
+#Finding a sub string
+
+if "orld" in astr: 
+   print('Sub String exists')  

@@ -192,7 +192,7 @@ gpd.select(gpd["yr"],gpd["avg(Close)"].alias("avg_close"), gpd["avg(High)"].alia
 
 print(gpd.describe())
 
-
+gpd.select(gpd["yr"],format_number(gpd["avg(Close)"],2).alias("avg_close"), format_number(gpd["avg(High)"],2).alias("avg_high")).show()
 
 #select(avg('Close'),"yr").show()
 

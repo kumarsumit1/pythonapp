@@ -1,0 +1,8 @@
+
+1. lists all the functions \
+	`print(dir(dataframe.show()))`
+2. usage of any function in python \
+	`help(dataframe.show)`
+3. Type of object/class \
+	`print(type(dataframe))`
+4.

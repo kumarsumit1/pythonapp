@@ -8,7 +8,7 @@ import os,ftplib
 import json,datetime,urllib2,urllib
 from pyspark import SparkContext, SparkConf
 from pyspark.sql import HiveContext,SQLContext
-#import requests
+import requests
 
 try:
     from configparser import ConfigParser
