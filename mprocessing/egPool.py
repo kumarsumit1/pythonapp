@@ -7,10 +7,11 @@ data = (
     ['e', '1'], ['f', '3'], ['g', '5'], ['h', '7']
 )
 
-def mp_worker((inputs, the_time)):
-    print " Processs %s\tWaiting %s seconds" % (inputs, the_time)
+the_time=5
+def mp_worker(inputs):
+    print (" Processs %s\tWaiting %s seconds" % (inputs, the_time))
     time.sleep(int(the_time))
-    print " Process %s\tDONE" % inputs
+    print (" Process %s\tDONE" % inputs)
 
 def mp_handler():
     p = multiprocessing.Pool(2)
@@ -27,5 +28,5 @@ def mp_handler_pair():
         p.map(mp_worker, (task1, task2))
 
 if __name__ == '__main__':
-    mp_handler_pair()
-    #mp_handler()
+    #mp_handler_pair()
+    mp_handler()

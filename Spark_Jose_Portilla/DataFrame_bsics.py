@@ -22,6 +22,12 @@ appleStocks=spark.read.csv("./data/appl_stock.csv",inferSchema=True,header=True)
 
 appleStocks.show()
 
+#takes select expression
+str=['Date as dtsss','Open as odddoo']
+appleStocks.selectExpr(str).show()
+
+appleStocks.selectExpr("Date as dts","Open as ooo").show() #, Open, High, Low, Close, Volume
+
 print(appleStocks.head(3))
 
 print(appleStocks.head(3)[0])

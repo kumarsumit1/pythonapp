@@ -15,6 +15,7 @@ print("The count is ", astr.count("l"))
 #Slice Operator
 
 print("word from index 3 to 6", astr[3:7])
+print("printing word from beginning to second last char",astr[:-1])
 
 ''' Note ::
 This prints a slice of the string, starting at index 3, and ending at index 6. 
@@ -28,6 +29,26 @@ the first number to the end.
 
 You can even put negative numbers inside the brackets. They are an easy way of starting at the
  end of the string instead of the beginning. This way, -3 means "3rd character from the end".
+ 
+Index from rear:    -6  -5  -4  -3  -2  -1      
+Index from front:    0   1   2   3   4   5      
+                   +---+---+---+---+---+---+    
+                   | a | b | c | d | e | f |    
+                   +---+---+---+---+---+---+    
+Slice from front:  :   1   2   3   4   5   :    
+Slice from rear:   :  -5  -4  -3  -2  -1   :
+
+Various Slice options :
+a[start:end] # items start through end-1
+a[start:]    # items start through the rest of the array
+a[:end]      # items from the beginning through end-1
+a[:]         # a copy of the whole array
+
+There is also the step value, which can be used with any of the above:
+
+a[start:end:step] # start through not past end, by step 
+ 
+
  
 '''
 

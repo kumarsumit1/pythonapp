@@ -1,3 +1,7 @@
+## Setting up Pyhon
+1. https://www.codingforentrepreneurs.com/blog/install-python-django-on-windows/
+
+
 ## Steps to install Spark and Python
 
 1. http://sundog-education.com/spark-python/
@@ -71,3 +75,13 @@ Cloudera Manager is not started by default. To see options for starting Cloudera
 /home/cloudera/cloudera-manager
 	
 [ Tutorial CDH ] ( https://medium.com/@SnazzyHam/how-to-get-up-and-running-with-clouderas-quickstart-docker-container-732c04ed0280 )
+
+[ Spark Packaging ] ( https://bytes.grubhub.com/managing-dependencies-and-artifacts-in-pyspark-7641aa89ddb7 )
+                     (https://github.com/alekseyig/spark-submit-deps )
+
+[ Spark Pack ] ( https://developerzen.com/best-practices-writing-production-grade-pyspark-jobs-cb688ac4d20f )
+
+
+## Sample spark-submit  https://github.com/alekseyig/spark-submit-deps
+
+/usr/lib/spark/bin/spark-submit --conf spark.hadoop.yarn.resourcemanager.connect.max-wait.ms=60000 --conf spark.hadoop.fs.defaultFS=hdfs://ip-172-31-105-149.ec2.internal:8020 --conf spark.hadoop.yarn.resourcemanager.address=ip-172-31-105-149.ec2.internal:8032 --conf spark.dynamicAllocation.enabled=true --conf spark.shuffle.service.enabled=true --conf spark.dynamicAllocation.minExecutors=1 --conf spark.dynamicAllocation.maxExecutors=38 --conf spark.executor.memory=5g --conf spark.executor.cores=4 --name tape --master yarn --deploy-mode cluster --jars /opt/amazon/superjar/glue-assembly.jar --files /tmp/glue-default.conf,/tmp/glue-override.conf,/opt/amazon/certs/InternalAndExternalAndAWSTrustStore.jks,/opt/amazon/certs/rds-combined-ca-bundle.pem,/opt/amazon/certs/redshift-ssl-ca-cert.pem,/opt/amazon/certs/RDSTrustStore.jks,/tmp/image-creation-time,,/tmp/g-3a0f2403b8c8a7ead7c4454d76bb788e5c250b9a-7612692496177147945/script_2018-10-16-10-57-53.py --py-files /tmp/PyGlue.zip /tmp/runscript.py script_2018-10-16-10-57-53.py --JOB_NAME stocksjob1 --JOB_ID j_2dde8c599ddd2f6b43d39eb153223626fdd9eb40a046383fa40a638a08dba628 --JOB_RUN_ID jr_d3c41b4da8db2b8ca62cac390765d25f9e839ae8f72569436c7659da5a46d4e0 --job-bookmark-option job-bookmark-disable --TempDir s3://aws-glue-temporary-145548758791-us-east-1/demr255048
