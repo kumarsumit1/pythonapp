@@ -132,4 +132,66 @@ Downloading packages as wheel in a folder
 pip wheel -r requirements.txt -w lib
 
 
+-------------------------------
+pip
+
+Use Pip --user installs for your default environment
+
+pip install --user mypackage
+
+
+## Python Special Variables and Methods
+
+1. __name__ and __main__ : 
+
+2. __doc__ :  __doc__ will print out the docstring that appears in a class or method
+
+3. __getattr__ and getattr :
+
+4. __setattr__ and setattr :
+
+5. __class__ and type :
+
+6. __bases__ : __bases__ is a variable that contains as a tuple all the classes that a class inherites from
+
+7. __subclasses__() : __subclasses__ is a method that will return all the subclasses of a class in a list
+
+8. locals() and globals() : locals is a native method that displays all the local variables as dictionary entries. globals does the same with global variables
+
+9. __dict__ : __dict__ will return, as a dictionary, all attributes of a class instance
+
+10. 
+
+## Try Except Finally block
+
+It will always go to the finally block, so it will ignore the return in the try and except. If you would have a return above the try and except, it would return that value.
+
+def func1():
+    try:
+        return 1 # ignoring the return
+    finally:
+        return 2 # returns this return
+
+def func2():
+    try:
+        raise ValueError()
+    except:
+        # is going to this exception block, but ignores the return because it needs to go to the finally
+        return 1
+    finally:
+        return 3
+
+def func3():
+    return 0 # finds a return here, before the try except and finally block, so it will use this return 
+    try:
+        raise ValueError()
+    except:
+        return 1
+    finally:
+        return 3
+
+
+func1() # returns 2
+func2() # returns 3
+func3() # returns 0
 	
