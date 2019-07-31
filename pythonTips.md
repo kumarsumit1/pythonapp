@@ -142,30 +142,30 @@ pip install --user mypackage
 
 ## Python Special Variables and Methods
 
-1. __name__ and __main__ : 
+>__name__ and __main__ : 
 
-2. __doc__ :  __doc__ will print out the docstring that appears in a class or method
+>__doc__ :  __doc__ will print out the docstring that appears in a class or method
 
-3. __getattr__ and getattr :
+>__getattr__ and getattr :
 
-4. __setattr__ and setattr :
+>__setattr__ and setattr :
 
-5. __class__ and type :
+>__class__ and type :
 
-6. __bases__ : __bases__ is a variable that contains as a tuple all the classes that a class inherites from
+>__bases__ : __bases__ is a variable that contains as a tuple all the classes that a class inherites from
 
-7. __subclasses__() : __subclasses__ is a method that will return all the subclasses of a class in a list
+>__subclasses__() : __subclasses__ is a method that will return all the subclasses of a class in a list
 
-8. locals() and globals() : locals is a native method that displays all the local variables as dictionary entries. globals does the same with global variables
+>locals() and globals() : locals is a native method that displays all the local variables as dictionary entries. globals does the same with global variables
 
-9. __dict__ : __dict__ will return, as a dictionary, all attributes of a class instance
+>__dict__ : __dict__ will return, as a dictionary, all attributes of a class instance
 
-10. 
+ 
 
 ## Try Except Finally block
 
 It will always go to the finally block, so it will ignore the return in the try and except. If you would have a return above the try and except, it would return that value.
-
+```
 def func1():
     try:
         return 1 # ignoring the return
@@ -194,4 +194,6 @@ def func3():
 func1() # returns 2
 func2() # returns 3
 func3() # returns 0
-	
+```
+
+## Test	
