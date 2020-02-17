@@ -1,0 +1,21 @@
+id,TEX201403310
+version,2
+info,visteam,PHI
+info,hometeam,TEX
+info,site,ARL02
+info,date,2014/03/31
+info,number,0
+info,starttime,1:07PM
+info,daynight,day
+info,usedh,true
+info,umphome,joycj901
+info,attendance,49031
+start,reveb001,"Ben Revere",0,1,8
+start,rollj001,"Jimmy Rollins",0,2,6
+start,utlec001,"Chase Utley",0,3,4
+start,howar001,"Ryan Howard",0,4,3
+start,byrdm001,"Marlon Byrd",0,5,9
+id,TEX201404010
+version,2
+info,visteam,PHI
+info,hometeam,TEX

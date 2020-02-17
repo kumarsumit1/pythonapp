@@ -20,7 +20,7 @@ sales.select(fun.avg('Sales').alias("average_sales")).show()` \
 6. 
 
 
-
+https://github.com/giulbia/backbone_pyspark_deploy
 ## Setting up env and project [How to Setup a new Python Project EuroPython 2014]:
 
 Currently, there are two common tools for creating Python virtual environments:
@@ -196,4 +196,15 @@ func2() # returns 3
 func3() # returns 0
 ```
 
-## Test	
+## VS Code Setup
+
+plugins:
+kite
+
+
+python -m venv [DIR]
+source [DIR]/bin/activate
+
+pip install -r requirements.txt
+
+pytest tests/test_moving_average.py::test_moving_average
