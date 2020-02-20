@@ -127,19 +127,6 @@ $ python setup.py bdist_wheel
 
 
 
------------------------------
-Downloading packages as wheel in a folder
-pip wheel -r requirements.txt -w lib
-
-
--------------------------------
-pip
-
-Use Pip --user installs for your default environment
-
-pip install --user mypackage
-
-
 ## Python Special Variables and Methods
 
 >__name__ and __main__ : 
@@ -195,6 +182,50 @@ func1() # returns 2
 func2() # returns 3
 func3() # returns 0
 ```
+
+
+## PIP Tips
+
+
+- pip search :
+	pip search allows you to search PyPI for any package using the pip search <package> command.
+- pip install : 
+	You can install a package using the `pip install <package>` command.There is also a concept called caching. pip provides a cache which functions similarly to that of a web browser and it is on by default. We can disable the cache and always access the PyPI using the –no-cache-dir   
+	option as:
+	```
+	pip install --no-cache-dir flask
+	```
+	Installing specific version
+	```
+	pip install SomePackage==1.0.4 
+	```
+	Use Pip --user installs for your default environment
+	```
+	pip install --user mypackage
+	```
+	For installing packages using requirements.txt 
+	```
+	pip install -r <path_to_file>
+	```
+	Installing requirements.txt packages in specific folder, using option `-t, --target <dir>` 
+	```
+	pip install -r requirements.txt -t ./lib
+	```
+	Downloading packages as wheel in a folder using option `-w, --wheel-dir` , which Build wheels into `<dir>`
+	```
+	pip wheel -r requirements.txt -w lib
+	```
+	
+- pip show :
+	It’s very common to get details about a package that is currently installed.	
+- pip uninstall :
+	We can remove any package using the `pip uninstall <package>` command.	
+- pip list :
+	The pip list command returns the list of packages in the current environment. It also returns the installed version for each package. 	
+- pip freeze :
+	We use this command to freeze the packages and their current version.
+	We pass a filename to the `pip freeze > filename` command.
+
 
 ## VS Code Setup
 
