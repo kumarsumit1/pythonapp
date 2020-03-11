@@ -530,3 +530,13 @@ Aggregation Functions in Pandas
 https://www.arc.vt.edu/wp-content/uploads/2016/08/pandas.pdf -- Might check
 https://www.geeksforgeeks.org/python-pandas-series/
 https://www.geeksforgeeks.org/python-pandas-dataframe/
+
+
+Sample PYTHON PROGRAM
+
+https://medium.com/criteo-labs/packaging-code-with-pex-a-pyspark-example-9057f9f144f3
+https://punchplatform.com/2019/10/08/packaging-python/
+http://www.legendu.net/misc/blog/packaging-python-dependencies-for-pyspark-using-pex/
+http://www.legendu.net/misc/blog/tips-on-pex/
+
+https://github.com/kumarsumit1/PysparkSampleProject
