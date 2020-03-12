@@ -79,7 +79,7 @@ python -m pip matplotlib
 
     "python.linting.pylintEnabled": true,
      "terminal.integrated.env.windows": {
-        "PYTHONPATH": "$Env:PYTHONPATH;$Env:SPARK_HOME\\python;C:\\Users\\sk250102\\Downloads\\bigdataSetup\\spark-2.2.1-bin-hadoop2.7\\python\\lib\\py4j-0.10.4-src.zip;C:\\Users\\sk250102\\Downloads\\bigdataSetup\\spark-2.2.1-bin-hadoop2.7\\python\\lib\\pyspark.zip"
+        "PYTHONPATH": "$Env:PYTHONPATH;$Env:SPARK_HOME\\python;C:\\Users\\sk\\Downloads\\bigdataSetup\\spark-2.2.1-bin-hadoop2.7\\python\\lib\\py4j-0.10.4-src.zip;C:\\Users\\sk\\Downloads\\bigdataSetup\\spark-2.2.1-bin-hadoop2.7\\python\\lib\\pyspark.zip"
     },
 	
 	
@@ -93,7 +93,7 @@ python -m pip matplotlib
               //               "~/google-cloud-sdk/platform/google_appengine/lib/protorpc-1.0"
               //           ],
               //  "terminal.integrated.env.windows": {
-              //               "PYTHONPATH" : "C:\\Users\\sk250102\\Downloads\\bigdataSetup\\spark-2.2.1-bin-hadoop2.7\\python\\lib\\py4j-0.10.4-src.zip;C:\\Users\\sk250102\\Downloads\\bigdataSetup\\spark-2.2.1-bin-hadoop2.7\\python\\lib\\pyspark.zip;${env:PYTHONPATH}"
+              //               "PYTHONPATH" : "C:\\Users\\sk\\Downloads\\bigdataSetup\\spark-2.2.1-bin-hadoop2.7\\python\\lib\\py4j-0.10.4-src.zip;C:\\Users\\sk\\Downloads\\bigdataSetup\\spark-2.2.1-bin-hadoop2.7\\python\\lib\\pyspark.zip;${env:PYTHONPATH}"
               //  }
 
 10. For file associations normally using Poetry			  
@@ -103,7 +103,9 @@ python -m pip matplotlib
     },			  
 
 
+11. poetry virtualenvs in select interpreter option of VSCode
 
+"python.venvPath": "C:\\Users\\sk\\AppData\\Local\\pypoetry\\Cache\\virtualenvs"
 
 
 
