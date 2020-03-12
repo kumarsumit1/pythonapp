@@ -532,11 +532,25 @@ https://www.geeksforgeeks.org/python-pandas-series/
 https://www.geeksforgeeks.org/python-pandas-dataframe/
 
 
-Sample PYTHON PROGRAM
+
+Sample PYTHON PROGRAM -- PEX
+
 
 https://medium.com/criteo-labs/packaging-code-with-pex-a-pyspark-example-9057f9f144f3
 https://punchplatform.com/2019/10/08/packaging-python/
 http://www.legendu.net/misc/blog/packaging-python-dependencies-for-pyspark-using-pex/
 http://www.legendu.net/misc/blog/tips-on-pex/
 
+
 https://github.com/kumarsumit1/PysparkSampleProject
+
+
+Python depency management 
+poetry -- similar to composer (PHP) or cargo (Rust).
+https://hackersandslackers.com/python-poetry-package-manager/
+
+https://www.pythoncheatsheet.org/blog/python-projects-with-poetry-and-vscode-part-1/
+
+https://www.youtube.com/watch?v=QX_Nhu1zhlg
+https://www.youtube.com/watch?v=6ey-nNRvBrk
+
