@@ -42,6 +42,14 @@ https://hackernoon.com/setting-up-python-dev-in-vs-code-e84f01c1f64b
     : Intellicode ( AI support for suggestion)
 	: Live share code
 	: Python Language Server
+	: Remote Development ( A suite of remote plugin development )
+	: Bracket Pair Colonizer
+	: Docker
+	: Settings Sync
+	: WSL
+	: Material Icon pack
+
+
  
 
 2.Command Pallet : Format document ( For python choose black)

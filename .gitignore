@@ -108,3 +108,4 @@ ENV/
 #VsCode
 .vscode/
 */.vscode/
+DE_Python_MovingAverageAssignment/metastore_db/*

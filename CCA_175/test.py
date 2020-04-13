@@ -1,10 +1,15 @@
 from pyspark.sql import SparkSession
 
-spark= SparkSession.builder.appName("test").getOrCreate()
+spark = (
+    SparkSession.builder.appName("test")
+    .master("local[*]")
+    .config("spark.driver.bindAddress", "localhost")
+    .getOrCreate()
+)
 
-#seqRdd=spark.sparkContext.sequenceFile("./tester", "org.apache.hadoop.io.IntWritable", "org.apache.hadoop.io.Text").toDF(["col1","col2"])
+# seqRdd=spark.sparkContext.sequenceFile("./tester", "org.apache.hadoop.io.IntWritable", "org.apache.hadoop.io.Text").toDF(["col1","col2"])
 
-#seqRdd.show()
+# seqRdd.show()
 
 # for item in seqRdd.take(2):
 #               print(item[0])
@@ -16,8 +21,8 @@ spark= SparkSession.builder.appName("test").getOrCreate()
 
 # hiveFile.show()
 
-txt=spark.read.option("lineSep", 'info,').text('resources/textFile/customLineSep.txt')
+txt = spark.read.option("lineSep", "info,").text("resources/textFile/customLineSep.txt")
 
-txt.show(n=2,truncate=False)
+txt.show(n=2, truncate=False)
 
 print(txt.count())

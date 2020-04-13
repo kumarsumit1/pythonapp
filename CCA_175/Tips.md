@@ -1,5 +1,9 @@
 # Pyspark
 
+spark-sql --master yarn --name spark_load_test -e "select * from retail.dgentab limit 2; select * from retail.dgentab limit 2;"
+
+spark-submit --master yarn test.py
+
 ## Reading
 
 1. Read the data as data frame, It converts the elements of Type Row having key value pairs.

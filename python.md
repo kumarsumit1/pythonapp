@@ -466,6 +466,15 @@ Imports happen only once
 
 https://learning-python.readthedocs.io/en/latest/chapter06/README.html
 
+
+Only files in system paths gets executed in python modules
+```
+import sys
+print(sys.path)
+```
+David Beazley - Modules and Packages: Live and Let Die!
+https://www.youtube.com/watch?v=0oTh1CXRaQ0
+
 ### Importan system modules
 
 To see all the built in modules
