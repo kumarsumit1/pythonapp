@@ -186,6 +186,24 @@ func3() # returns 0
 
 ## PIP Tips
 
+Installing with get-pip.py
+```
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python{version.minorVersion} get-pip.py
+
+```
+
+NOTE : Be cautious if you’re using a Python install that’s managed by your operating system or another package manager. 
+		get-pip.py does not coordinate with those tools, and may leave your system in an inconsistent state.
+
+Pip is an independent project so if a system already has multiple versions of python and pip, 
+Then one can use "ensurepip" module bootstrap pip with any version of python.
+```
+python{version.minorVersion} -m ensurepip --default-pip
+
+pip{version.minorVersion} -V
+
+```
 
 - pip search :
 	pip search allows you to search PyPI for any package using the pip search <package> command.
