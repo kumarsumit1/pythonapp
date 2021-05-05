@@ -2,6 +2,7 @@ from math import exp
 from random import randint
 from datetime import datetime
 # https://datarus.wordpress.com/2015/05/04/fighting-the-skew-in-spark/ 
+# https://towardsdatascience.com/six-spark-exercises-to-rule-them-all-242445b24565
 def count_elements(splitIndex, iterator):
     n = sum(1 for _ in iterator)
     yield (splitIndex, n)
