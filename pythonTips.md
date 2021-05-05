@@ -257,3 +257,28 @@ source [DIR]/bin/activate
 pip install -r requirements.txt
 
 pytest tests/test_moving_average.py::test_moving_average
+
+
+## Python Packaging
+
+boiler plate pyspark
+https://www.youtube.com/watch?v=RAT-gQccsEs
+
+
+Pyspark detailed and good 
+https://www.youtube.com/watch?v=Bp0XvA3wIXw
+https://github.com/pchrabka/PySpark-PyData
+
+
+Pex
+
+Poetry
+
+https://mungingdata.com/pyspark/poetry-dependency-management-wheel/
+https://github.com/MrPowers/gill
+
+Explains all the param. so try to build a wheel package using poetry
+then use following link to execute it.
+https://towardsdatascience.com/successful-spark-submits-for-python-projects-53012ca7405a?gi=ac02b88b091a
+
+Try the youtube link of detailed one in case of libs and no alternative in poetry
