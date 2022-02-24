@@ -151,7 +151,8 @@ $ python setup.py bdist_wheel
 
 ## Try Except Finally block
 
-It will always go to the finally block, so it will ignore the return in the try and except. If you would have a return above the try and except, it would return that value.
+It will always go to the finally block, so it will ignore the return in the try and except. 
+If you would have a return above the try and except, it would return that value.
 ```
 def func1():
     try:
@@ -282,3 +283,23 @@ then use following link to execute it.
 https://towardsdatascience.com/successful-spark-submits-for-python-projects-53012ca7405a?gi=ac02b88b091a
 
 Try the youtube link of detailed one in case of libs and no alternative in poetry
+
+# Logging 
+Logs to sysout/ useful in cloud env 
+
+logger = logging.getLogger(__name__)
+handler = logging.StreamHandler(sys.stdout)
+formatter = logging.Formatter('[%(levelname)s]  \
+        %(asctime)s     \
+        %(name)s        \
+        %(message)s')
+handler.setFormatter(formatter)
+logger.setLevel(logging.INFO)
+logger.addHandler(handler)
+
+
+# Python debugging using VS Code and debugger
+
+https://www.youtube.com/watch?v=b78Tg-YmJZI  --> very good 
+
+https://www.youtube.com/watch?v=qCCj7qy72Bg  --> decent 

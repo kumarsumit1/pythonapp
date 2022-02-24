@@ -432,8 +432,13 @@ Yield is a keyword that is used like return, except the function will return a g
 ***We should use yield when we want to iterate over a sequence, but don’t want to store the entire sequence in memory.***  If the body of a def contains yield, the function automatically becomes a generator function.
 
 
+#### range() vs xrange() in Python
 
+	range() – This returns a range object (a type of iterable).
+	xrange() – This function returns the generator object that can be used to display numbers only by looping. The only particular range is displayed on demand and hence called “lazy evaluation“.
 
+Note : Python3's range is Python2's xrange. There's no need to wrap an iter around it. To get an actual list in Python3, you need to use list(range(...))
+		https://stackoverflow.com/questions/15014310/why-is-there-no-xrange-function-in-python3
 
 ### Special variables and methods (Dunder or Magic)
 https://docs.python.org/3/library/functions.html

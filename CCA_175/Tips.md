@@ -139,7 +139,8 @@ spark.read.format("json").option("compression","gzip").load("/verulam_blue/test1
 
 
    
-   
+Write only one file name    
+https://mungingdata.com/apache-spark/output-one-file-csv-parquet/
    
    
 #######
